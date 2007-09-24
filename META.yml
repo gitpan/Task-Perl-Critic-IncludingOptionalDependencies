@@ -1,0 +1,30 @@
+---
+name: Task-Perl-Critic-IncludingOptionalDependencies
+version: v1.001
+author:
+  - 'Elliot Shank <perl@galumph.com>'
+abstract: Install everything Perl::Critic plus its optional dependencies.
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+requires:
+  File::HomeDir: 0
+  File::Which: 0
+  IO::String: 1
+  IPC::Open2: 1
+  Perl::MinimumVersion: 0
+  Perl::Tidy: 0
+  Pod::Spell: 1
+  Task::Perl::Critic: 1.002
+  Term::ANSIColor: 0
+  Text::ParseWords: 3
+build_requires:
+  Test::More: 0
+provides:
+  Task::Perl::Critic::IncludingOptionalDependencies:
+    file: lib/Task/Perl/Critic/IncludingOptionalDependencies.pm
+    version: 1.001
+generated_by: Module::Build version 0.2808
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2

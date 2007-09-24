@@ -1,0 +1,14 @@
+[1.001] Released on 2007-09-23.
+
+     Fix the distribution name.  Whoops.
+
+     Update Task::Perl::Critic dependency version.
+
+[1.000] Released on 2007-07-30.
+
+     Initial version.
+
+#      $URL$
+#     $Date$
+#   $Author$
+# $Revision$
