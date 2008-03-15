@@ -1,3 +1,7 @@
+[1.002] Released on 2008-03-15.
+
+     Add new optional dependencies in Perl::Critic 1.082.
+
 [1.001] Released on 2007-09-23.
 
      Fix the distribution name.  Whoops.
@@ -8,7 +12,7 @@
 
      Initial version.
 
-#      $URL$
-#     $Date$
-#   $Author$
-# $Revision$
+#      $URL: http://perlcritic.tigris.org/svn/perlcritic/trunk/Task-Perl-Critic-IncludingOptionalDependencies/Changes $
+#     $Date: 2008-03-15 10:21:15 -0500 (Sat, 15 Mar 2008) $
+#   $Author: clonezone $
+# $Revision: 2180 $

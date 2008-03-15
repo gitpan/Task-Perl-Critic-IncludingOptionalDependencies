@@ -4,7 +4,7 @@ use 5.006001;
 use strict;
 use warnings;
 
-our $VERSION = '1.001';
+our $VERSION = '1.002';
 
 
 1; # Magic true value required at end of module
@@ -21,7 +21,7 @@ Task::Perl::Critic::IncludingOptionalDependencies - Install everything Perl::Cri
 =head1 VERSION
 
 This document describes
-Task::Perl::Critic::IncludingOptionalDependencies version 1.0.0.
+Task::Perl::Critic::IncludingOptionalDependencies version 1.2.0.
 
 
 =head1 SYNOPSIS
@@ -56,7 +56,11 @@ configuration files or environment variables.
 
 L<Task::Perl::Critic>
 
+L<ExtUtils::Manifest>
+
 L<File::HomeDir>
+
+L<File::Temp>
 
 L<File::Which>
 
@@ -69,6 +73,8 @@ L<Perl::MinimumVersion>
 L<Perl::Tidy>
 
 L<Pod::Spell>
+
+L<Regexp::Parser>
 
 L<Term::ANSIColor>
 
