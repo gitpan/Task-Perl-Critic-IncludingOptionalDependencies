@@ -1,18 +1,24 @@
+[1.003] Released on 2008-06-08.
+
+    Documentation updates.
+
+    Replace use of Module::Install with Module::Build.
+
 [1.002] Released on 2008-03-15.
 
-     Add new optional dependencies in Perl::Critic 1.082.
+    Add new optional dependencies in Perl::Critic 1.082.
 
 [1.001] Released on 2007-09-23.
 
-     Fix the distribution name.  Whoops.
+    Fix the distribution name.  Whoops.
 
-     Update Task::Perl::Critic dependency version.
+    Update Task::Perl::Critic dependency version.
 
 [1.000] Released on 2007-07-30.
 
-     Initial version.
+    Initial version.
 
 #      $URL: http://perlcritic.tigris.org/svn/perlcritic/trunk/Task-Perl-Critic-IncludingOptionalDependencies/Changes $
-#     $Date: 2008-03-15 10:21:15 -0500 (Sat, 15 Mar 2008) $
+#     $Date: 2008-06-08 22:35:50 -0500 (Sun, 08 Jun 2008) $
 #   $Author: clonezone $
-# $Revision: 2180 $
+# $Revision: 2439 $
