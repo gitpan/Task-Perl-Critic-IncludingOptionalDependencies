@@ -1,11 +1,11 @@
 #!perl
 
 #      $URL: http://perlcritic.tigris.org/svn/perlcritic/trunk/Task-Perl-Critic-IncludingOptionalDependencies/Build.PL $
-#     $Date: 2008-06-08 22:23:11 -0500 (Sun, 08 Jun 2008) $
+#     $Date: 2008-07-06 07:11:00 -0500 (Sun, 06 Jul 2008) $
 #   $Author: clonezone $
-# $Revision: 2436 $
+# $Revision: 2500 $
 
-use 5.006;
+use 5.006001;
 
 use strict;
 use warnings;
@@ -60,13 +60,14 @@ my $builder = $class->new(
     sign                => 0,
 
     requires            => {
-        'Task::Perl::Critic'   => 1.005,
+        'Task::Perl::Critic'   => 1.006,
         'File::HomeDir'        => 0,
         'File::Which'          => 0,
         'IPC::Open2'           => 1,
         'Perl::MinimumVersion' => 0,
         'Perl::Tidy'           => 0,
         'Pod::Spell'           => 1,
+        'Readonly::XS'         => 0,
         'Regexp::Parser'       => 0.20,
         'Term::ANSIColor'      => 0,
         'Text::ParseWords'     => 3,
