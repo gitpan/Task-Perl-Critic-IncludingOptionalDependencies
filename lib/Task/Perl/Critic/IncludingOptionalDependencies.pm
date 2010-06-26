@@ -4,7 +4,7 @@ use 5.006001;
 use strict;
 use warnings;
 
-our $VERSION = '1.004';
+our $VERSION = '1.005';
 
 
 1; # Magic true value required at end of module
@@ -21,17 +21,17 @@ Task::Perl::Critic::IncludingOptionalDependencies - Install everything Perl::Cri
 =head1 VERSION
 
 This document describes
-Task::Perl::Critic::IncludingOptionalDependencies version 1.4.0.
+Task::Perl::Critic::IncludingOptionalDependencies version 1.5.0.
 
 
 =head1 SYNOPSIS
 
-This module does nothing but act as a placeholder.  See L<Task>.
+This module does nothing but act as a placeholder.  See L<Task|Task>.
 
 
 =head1 DESCRIPTION
 
-This module does nothing but act as a placeholder.  See L<Task>.
+This module does nothing but act as a placeholder.  See L<Task|Task>.
 
 Inspired by a question at the Perl::Critic BoF at OSCON 2007.
 
@@ -39,9 +39,10 @@ B<WARNING>: Installing this distribution will install Policies that
 directly conflict with each other.  If you do not use a
 F<.perlcriticrc> file, and your severity is set high enough, there is
 no way for your code to not have violations.  A specific example:
-L<Perl::Critic::Policy::Compatibility::ProhibitThreeArgumentOpen> and
-L<Perl::Critic::Policy::InputOutput::ProhibitTwoArgOpen> directly
-contradict each other.
+L<Compatibility::ProhibitThreeArgumentOpen|Perl::Critic::Policy::Compatibility::ProhibitThreeArgumentOpen>
+and
+L<InputOutput::ProhibitTwoArgOpen|Perl::Critic::Policy::InputOutput::ProhibitTwoArgOpen>
+directly contradict each other.
 
 
 =head1 INTERFACE
@@ -62,27 +63,27 @@ configuration files or environment variables.
 
 =head1 DEPENDENCIES
 
-L<Task::Perl::Critic>
+L<Task::Perl::Critic|Task::Perl::Critic>
 
-L<File::HomeDir>
+L<File::HomeDir|File::HomeDir>
 
-L<File::Which>
+L<File::Which|File::Which>
 
-L<IPC::Open2>
+L<IPC::Open2|IPC::Open2>
 
-L<Perl::MinimumVersion>
+L<Perl::MinimumVersion|Perl::MinimumVersion>
 
-L<Perl::Tidy>
+L<Perl::Tidy|Perl::Tidy>
 
-L<Pod::Spell>
+L<Pod::Spell|Pod::Spell>
 
-L<Readonly::XS>
+L<PPIx::Regexp|PPIx::Regexp>
 
-L<Regexp::Parser>
+L<Readonly::XS|Readonly::XS>
 
-L<Term::ANSIColor>
+L<Term::ANSIColor|Term::ANSIColor>
 
-L<Text::ParseWords>
+L<Term::ANSIColor|Text::ParseWords>
 
 
 =head1 INCOMPATIBILITIES
@@ -106,8 +107,7 @@ Elliot Shank  C<< <perl@galumph.com> >>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (C)2007, Elliot Shank C<< <perl@galumph.com> >>. All rights
-reserved.
+Copyright (c)2007-2010, Elliot Shank C<< <perl@galumph.com> >>.
 
 This module is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself. See L<perlartistic>.

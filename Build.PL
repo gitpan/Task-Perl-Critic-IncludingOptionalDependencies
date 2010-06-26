@@ -1,9 +1,9 @@
 #!perl
 
-#      $URL: http://perlcritic.tigris.org/svn/perlcritic/trunk/Task-Perl-Critic-IncludingOptionalDependencies/Build.PL $
-#     $Date: 2008-07-06 07:11:00 -0500 (Sun, 06 Jul 2008) $
+#      $URL: http://perlcritic.tigris.org/svn/perlcritic/trunk/distributions/Task-Perl-Critic-IncludingOptionalDependencies/Build.PL $
+#     $Date: 2010-06-26 15:52:08 -0500 (Sat, 26 Jun 2010) $
 #   $Author: clonezone $
-# $Revision: 2500 $
+# $Revision: 3857 $
 
 use 5.006001;
 
@@ -16,14 +16,6 @@ use Module::Build;
 
 
 my $class = Module::Build->subclass( code => <<'END_SUBCLASS' );
-
-    sub ACTION_test {
-        my ($self) = @_;
-
-        $self->depends_on('manifest');
-
-        return $self->SUPER::ACTION_test();
-    }
 
     sub ACTION_authortest {
         my ($self) = @_;
@@ -67,8 +59,8 @@ my $builder = $class->new(
         'Perl::MinimumVersion' => 0,
         'Perl::Tidy'           => 0,
         'Pod::Spell'           => 1,
+        'PPIx::Regexp'         => 0,
         'Readonly::XS'         => 0,
-        'Regexp::Parser'       => 0.20,
         'Term::ANSIColor'      => 0,
         'Text::ParseWords'     => 3,
     },
@@ -90,7 +82,7 @@ my $builder = $class->new(
         resources   => {
             homepage    => 'http://perlcritic.com',
             license     => 'http://dev.perl.org/licenses/',
-            Repository  => 'http://perlcritic.tigris.org/svn/perlcritic/trunk/Task-Perl-Critic/',
+            repository  => 'http://guest@perlcritic.tigris.org/svn/perlcritic/trunk/distributions/Task-Perl-Critic/',
             MailingList => 'http://perlcritic.tigris.org/servlets/SummarizeList?listName=users',
         }
     },

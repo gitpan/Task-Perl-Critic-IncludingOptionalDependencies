@@ -1,3 +1,7 @@
+[1.005] Released on 2010-06-26
+
+    Replace Regexp::Parser with PPIx::Regexp.
+
 [1.004] Released on 2008-07-06
 
     "use 5.006001" in Makefile.PL and Build.PL.
@@ -24,7 +28,7 @@
 
     Initial version.
 
-#      $URL: http://perlcritic.tigris.org/svn/perlcritic/trunk/Task-Perl-Critic-IncludingOptionalDependencies/Changes $
-#     $Date: 2008-07-06 07:17:47 -0500 (Sun, 06 Jul 2008) $
+#      $URL: http://perlcritic.tigris.org/svn/perlcritic/trunk/distributions/Task-Perl-Critic-IncludingOptionalDependencies/Changes $
+#     $Date: 2010-06-26 15:52:08 -0500 (Sat, 26 Jun 2010) $
 #   $Author: clonezone $
-# $Revision: 2502 $
+# $Revision: 3857 $

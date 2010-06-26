@@ -4,7 +4,7 @@ NAME
 
 VERSION
     This document describes
-    Task::Perl::Critic::IncludingOptionalDependencies version 1.4.0.
+    Task::Perl::Critic::IncludingOptionalDependencies version 1.5.0.
 
 SYNOPSIS
     This module does nothing but act as a placeholder. See Task.
@@ -18,9 +18,8 @@ DESCRIPTION
     directly conflict with each other. If you do not use a .perlcriticrc
     file, and your severity is set high enough, there is no way for your
     code to not have violations. A specific example:
-    Perl::Critic::Policy::Compatibility::ProhibitThreeArgumentOpen and
-    Perl::Critic::Policy::InputOutput::ProhibitTwoArgOpen directly
-    contradict each other.
+    Compatibility::ProhibitThreeArgumentOpen and
+    InputOutput::ProhibitTwoArgOpen directly contradict each other.
 
 INTERFACE
     None.
@@ -47,13 +46,13 @@ DEPENDENCIES
 
     Pod::Spell
 
-    Readonly::XS
+    PPIx::Regexp
 
-    Regexp::Parser
+    Readonly::XS
 
     Term::ANSIColor
 
-    Text::ParseWords
+    Term::ANSIColor
 
 INCOMPATIBILITIES
     None reported.
@@ -69,8 +68,7 @@ AUTHOR
     Elliot Shank "<perl@galumph.com>"
 
 LICENSE AND COPYRIGHT
-    Copyright (C)2007, Elliot Shank "<perl@galumph.com>". All rights
-    reserved.
+    Copyright (c)2007-2010, Elliot Shank "<perl@galumph.com>".
 
     This module is free software; you can redistribute it and/or modify it
     under the same terms as Perl itself. See perlartistic.
